@@ -1,4 +1,4 @@
-ser ver:
+server:
   port: 8080
   servlet:
     context-path: /identity
@@ -14,3 +14,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
+logging:
+  level:
+    root: INFO
+    com.myproject: DEBUG
+  file:
+    name: logs/spring-boot-logger.log

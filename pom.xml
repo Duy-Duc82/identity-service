@@ -16,8 +16,7 @@
 	<name>identity-service</name>
 	<description>Identity Service project</description>
 
-	<!-- Link dự án -->
-	<url>https://github.com/Duy-Duc82/IDENTITY_SERVICE</url>
+	<url>https://github.com/Duy-Duc82/identity-service</url>
 
 	<licenses>
 		<license>
@@ -36,9 +35,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/Duy-Duc82/IDENTITY_SERVICE.git</connection>
-		<developerConnection>scm:git:git@github.com:Duy-Duc82/IDENTITY_SERVICE.git</developerConnection>
-		<url>https://github.com/Duy-Duc82/IDENTITY_SERVICE</url>
+		<connection>scm:git:git://github.com/Duy-Duc82/identity-service.git</connection>
+		<developerConnection>scm:git:git@github.com:Duy-Duc82/identity-service.git</developerConnection>
+		<url>https://github.com/Duy-Duc82/identity-service</url>
 	</scm>
 
 	<properties>
@@ -81,6 +80,12 @@
 			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>annotationProcessor</scope>
+		</dependency>
 
 		<!-- MapStruct runtime library -->
 		<dependency>
@@ -94,9 +99,36 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
 			<version>${mapstruct.version}</version>
-			<scope>provided</scope>
+			<scope>annotationProcessor</scope>
 		</dependency>
+
+		<!-- BCrypt for password hashing -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+			<version>5.8.6</version>
+		</dependency>
+
+		<!-- SLF4J for logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.7</version>
+		</dependency>
+
+		<!-- Spring Security OAuth2 Resource Server -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+
 	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -112,6 +144,11 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<version>${lombok.version}</version>
+						</path>
 						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>

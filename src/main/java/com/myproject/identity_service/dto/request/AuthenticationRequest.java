@@ -10,9 +10,8 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ApiResponse<T> {
-     String message;
-     int code =1000;
-     T result;
+public class AuthenticationRequest {
+    String name;
+    String password;
 
 }

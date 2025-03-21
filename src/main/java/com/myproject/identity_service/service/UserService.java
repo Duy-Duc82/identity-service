@@ -2,46 +2,62 @@ package com.myproject.identity_service.service;
 
 import com.myproject.identity_service.dto.request.UserCreationRequest;
 import com.myproject.identity_service.dto.request.UserUpdateRequest;
+import com.myproject.identity_service.dto.response.UserResponse;
 import com.myproject.identity_service.entity.User;
+import com.myproject.identity_service.enums.Role;
 import com.myproject.identity_service.exception.AppException;
 import com.myproject.identity_service.exception.ErrorCode;
+import com.myproject.identity_service.mapper.UserMapper;
 import com.myproject.identity_service.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import java.util.List;
-import java.util.UUID;
 
+import java.util.HashSet;
+import java.util.List;
+
+
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
 @Service
 public class UserService {
-    @Autowired
-    private UserRepository userRepository;
+     final UserRepository userRepository;
+     final UserMapper userMapper;
 
-    public User createUser(UserCreationRequest request) {
-        User user = new User();
+    public UserResponse createUser(UserCreationRequest request) {
         if(userRepository.existsByName(request.getName()))
-            throw new RuntimeException("ErrorCode.USER_EXISTED");
-        user.setName(request.getName());
-        user.setPassword(request.getPassword());
-        user.setDob(request.getDob());
+            throw new AppException(ErrorCode.USER_EXISTED);
 
-        return userRepository.save(user);
-    }
-    public List<User> getUsers(){
-            return userRepository.findAll();
-    }
-    public User getUser(UUID id){
-        return userRepository.findById(id)
-                .orElseThrow(()->new RuntimeException("User not found"));
-    }
-    public User updateUser(UUID UserId, UserUpdateRequest request){
-        User user = getUser(UserId);
-        user.setName(request.getName());
-        user.setPassword(request.getPassword());
-        user.setDob(request.getDob());
+        User user = userMapper.toUser(request);
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(10);
+        user.setPassword(passwordEncoder.encode(request.getPassword()));
 
-        return userRepository.save(user);
+        HashSet<String> roles = new HashSet<>();
+        roles.add(Role.USER.name());
+
+        user.setRoles(roles);
+
+        return userMapper.toUserResponse(userRepository.save(user));
     }
-    public void deleteUser(UUID UserId){
+    public List<UserResponse> getUsers(){
+        return userRepository.findAll().stream()
+                .map(userMapper::toUserResponse).toList();
+    }
+    public UserResponse getUser(String id){
+        return userMapper.toUserResponse(userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found")));
+    }
+    public UserResponse updateUser(String UserId, UserUpdateRequest request){
+        User user = userRepository.findById(UserId)
+                .orElseThrow(()->new AppException(ErrorCode.USER_NOT_EXISTED));
+        userMapper.updateUser(user, request);
+
+        return userMapper.toUserResponse(userRepository.save(user));
+    }
+    public void deleteUser(String UserId){
         userRepository.deleteById(UserId);
     }
 }

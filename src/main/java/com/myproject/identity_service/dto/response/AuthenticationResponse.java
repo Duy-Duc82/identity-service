@@ -1,4 +1,4 @@
-package com.myproject.identity_service.dto.request;
+package com.myproject.identity_service.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
@@ -10,9 +10,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ApiResponse<T> {
-     String message;
-     int code =1000;
-     T result;
-
+public class AuthenticationResponse {
+    boolean authenticated;
+    String token;
 }
