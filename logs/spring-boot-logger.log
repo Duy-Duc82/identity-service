@@ -1,0 +1,450 @@
+2025-03-13T01:18:39.766+07:00  INFO 14088 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T01:18:39.817+07:00  INFO 14088 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T01:18:39.848+07:00  INFO 14088 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:18:39.870+07:00  INFO 14088 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T01:18:39.879+07:00  INFO 14088 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T01:32:53.043+07:00  INFO 17848 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 17848 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T01:32:53.045+07:00 DEBUG 17848 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T01:32:53.047+07:00  INFO 17848 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T01:32:54.229+07:00  INFO 17848 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T01:32:54.316+07:00  INFO 17848 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2025-03-13T01:32:55.157+07:00  INFO 17848 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T01:32:55.175+07:00  INFO 17848 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T01:32:55.176+07:00  INFO 17848 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T01:32:55.269+07:00  INFO 17848 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T01:32:55.269+07:00  INFO 17848 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2127 ms
+2025-03-13T01:32:55.519+07:00  INFO 17848 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T01:32:55.615+07:00  INFO 17848 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T01:32:55.673+07:00  INFO 17848 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T01:32:56.091+07:00  INFO 17848 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T01:32:56.140+07:00  INFO 17848 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T01:32:56.588+07:00  INFO 17848 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@686b1e2d
+2025-03-13T01:32:56.595+07:00  INFO 17848 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T01:32:56.666+07:00  WARN 17848 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T01:32:56.699+07:00  INFO 17848 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T01:32:57.720+07:00  INFO 17848 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T01:32:57.777+07:00  INFO 17848 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:32:58.254+07:00  WARN 17848 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T01:32:59.073+07:00  INFO 17848 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T01:32:59.083+07:00  INFO 17848 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 7.071 seconds (process running for 7.877)
+2025-03-13T01:33:05.159+07:00  INFO 17848 --- [identity-service] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T01:33:05.160+07:00  INFO 17848 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T01:33:05.162+07:00  INFO 17848 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T01:34:31.175+07:00  INFO 17848 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T01:34:31.180+07:00  INFO 17848 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T01:34:31.185+07:00  INFO 17848 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:34:31.188+07:00  INFO 17848 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T01:34:31.201+07:00  INFO 17848 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T01:49:54.795+07:00  INFO 18424 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 18424 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T01:49:54.798+07:00 DEBUG 18424 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T01:49:54.800+07:00  INFO 18424 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T01:49:55.877+07:00  INFO 18424 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T01:49:55.963+07:00  INFO 18424 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-03-13T01:49:56.779+07:00  INFO 18424 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T01:49:56.792+07:00  INFO 18424 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T01:49:56.793+07:00  INFO 18424 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T01:49:56.847+07:00  INFO 18424 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T01:49:56.847+07:00  INFO 18424 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1969 ms
+2025-03-13T01:49:57.042+07:00  INFO 18424 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T01:49:57.110+07:00  INFO 18424 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T01:49:57.163+07:00  INFO 18424 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T01:49:57.493+07:00  INFO 18424 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T01:49:57.526+07:00  INFO 18424 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T01:49:57.912+07:00  INFO 18424 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a47036
+2025-03-13T01:49:57.915+07:00  INFO 18424 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T01:49:57.984+07:00  WARN 18424 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T01:49:58.009+07:00  INFO 18424 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T01:49:58.822+07:00  INFO 18424 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T01:49:58.873+07:00  INFO 18424 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:49:59.315+07:00  WARN 18424 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T01:49:59.987+07:00  INFO 18424 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T01:49:59.997+07:00  INFO 18424 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 6.034 seconds (process running for 6.573)
+2025-03-13T01:50:03.656+07:00  INFO 18424 --- [identity-service] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T01:50:03.657+07:00  INFO 18424 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T01:50:03.658+07:00  INFO 18424 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T01:51:33.388+07:00  INFO 18424 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T01:51:33.393+07:00  INFO 18424 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T01:51:33.398+07:00  INFO 18424 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:51:33.400+07:00  INFO 18424 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T01:51:33.410+07:00  INFO 18424 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T01:51:37.978+07:00  INFO 17576 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 17576 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T01:51:37.981+07:00 DEBUG 17576 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T01:51:37.982+07:00  INFO 17576 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T01:51:39.002+07:00  INFO 17576 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T01:51:39.091+07:00  INFO 17576 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2025-03-13T01:51:39.842+07:00  INFO 17576 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T01:51:39.859+07:00  INFO 17576 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T01:51:39.859+07:00  INFO 17576 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T01:51:39.918+07:00  INFO 17576 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T01:51:39.919+07:00  INFO 17576 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1870 ms
+2025-03-13T01:51:40.125+07:00  INFO 17576 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T01:51:40.188+07:00  INFO 17576 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T01:51:40.234+07:00  INFO 17576 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T01:51:40.575+07:00  INFO 17576 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T01:51:40.612+07:00  INFO 17576 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T01:51:41.030+07:00  INFO 17576 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31e7afde
+2025-03-13T01:51:41.032+07:00  INFO 17576 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T01:51:41.094+07:00  WARN 17576 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T01:51:41.119+07:00  INFO 17576 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T01:51:41.926+07:00  INFO 17576 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T01:51:41.978+07:00  INFO 17576 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T01:51:42.406+07:00  WARN 17576 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T01:51:43.188+07:00  INFO 17576 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T01:51:43.202+07:00  INFO 17576 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 6.152 seconds (process running for 6.762)
+2025-03-13T01:51:46.373+07:00  INFO 17576 --- [identity-service] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T01:51:46.374+07:00  INFO 17576 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T01:51:46.377+07:00  INFO 17576 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-13T02:02:40.227+07:00  INFO 17576 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T02:02:40.231+07:00  INFO 17576 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T02:02:40.231+07:00  INFO 17576 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:02:40.237+07:00  INFO 17576 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T02:02:40.250+07:00  INFO 17576 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T02:02:44.578+07:00  INFO 8452 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 8452 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T02:02:44.582+07:00 DEBUG 8452 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T02:02:44.582+07:00  INFO 8452 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T02:02:45.559+07:00  INFO 8452 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T02:02:45.647+07:00  INFO 8452 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2025-03-13T02:02:46.409+07:00  INFO 8452 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T02:02:46.433+07:00  INFO 8452 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T02:02:46.433+07:00  INFO 8452 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T02:02:46.487+07:00  INFO 8452 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T02:02:46.487+07:00  INFO 8452 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1835 ms
+2025-03-13T02:02:46.696+07:00  INFO 8452 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T02:02:46.752+07:00  INFO 8452 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T02:02:46.797+07:00  INFO 8452 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T02:02:47.198+07:00  INFO 8452 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T02:02:47.262+07:00  INFO 8452 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T02:02:47.723+07:00  INFO 8452 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11228bee
+2025-03-13T02:02:47.723+07:00  INFO 8452 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T02:02:47.787+07:00  WARN 8452 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T02:02:47.807+07:00  INFO 8452 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T02:02:48.587+07:00  INFO 8452 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T02:02:48.637+07:00  INFO 8452 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:02:49.047+07:00  WARN 8452 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T02:02:49.667+07:00  INFO 8452 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T02:02:49.676+07:00  INFO 8452 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 5.999 seconds (process running for 6.53)
+2025-03-13T02:02:53.893+07:00  INFO 8452 --- [identity-service] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T02:02:53.895+07:00  INFO 8452 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T02:02:53.895+07:00  INFO 8452 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T02:04:17.728+07:00  INFO 8452 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T02:04:17.731+07:00  INFO 8452 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T02:04:17.737+07:00  INFO 8452 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:04:17.740+07:00  INFO 8452 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T02:04:17.751+07:00  INFO 8452 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T02:04:20.565+07:00  INFO 16896 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 16896 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T02:04:20.572+07:00 DEBUG 16896 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T02:04:20.574+07:00  INFO 16896 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T02:04:21.678+07:00  INFO 16896 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T02:04:21.795+07:00  INFO 16896 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2025-03-13T02:04:22.681+07:00  INFO 16896 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T02:04:22.701+07:00  INFO 16896 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T02:04:22.701+07:00  INFO 16896 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T02:04:22.759+07:00  INFO 16896 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T02:04:22.759+07:00  INFO 16896 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2128 ms
+2025-03-13T02:04:22.967+07:00  INFO 16896 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T02:04:23.030+07:00  INFO 16896 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T02:04:23.070+07:00  INFO 16896 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T02:04:23.418+07:00  INFO 16896 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T02:04:23.470+07:00  INFO 16896 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T02:04:23.833+07:00  INFO 16896 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f240187
+2025-03-13T02:04:23.837+07:00  INFO 16896 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T02:04:23.905+07:00  WARN 16896 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T02:04:23.929+07:00  INFO 16896 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T02:04:24.740+07:00  INFO 16896 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T02:04:24.791+07:00  INFO 16896 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:04:25.213+07:00  WARN 16896 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T02:04:25.235+07:00 DEBUG 16896 --- [identity-service] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-03-13T02:04:25.566+07:00 DEBUG 16896 --- [identity-service] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-13T02:04:25.855+07:00  INFO 16896 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T02:04:25.867+07:00  INFO 16896 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 6.152 seconds (process running for 6.788)
+2025-03-13T02:04:33.435+07:00  INFO 16896 --- [identity-service] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T02:04:33.435+07:00  INFO 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T02:04:33.435+07:00  INFO 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T02:04:33.455+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /user
+2025-03-13T02:04:33.468+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T02:04:33.479+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/user?continue to session
+2025-03-13T02:04:33.479+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-03-13T02:04:33.496+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-03-13T02:04:33.496+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T02:04:33.496+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/error?continue to session
+2025-03-13T02:04:33.500+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-03-13T02:07:16.599+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /users
+2025-03-13T02:07:16.600+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T02:07:16.601+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/users?continue to session
+2025-03-13T02:07:16.602+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-03-13T02:07:16.603+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-03-13T02:07:16.603+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T02:07:16.604+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/error?continue to session
+2025-03-13T02:07:16.604+07:00 DEBUG 16896 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-03-13T02:07:56.065+07:00  INFO 16896 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T02:07:56.065+07:00  INFO 16896 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T02:07:56.076+07:00  INFO 16896 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:07:56.076+07:00  INFO 16896 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T02:07:56.088+07:00  INFO 16896 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T02:08:00.119+07:00  INFO 12528 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 12528 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T02:08:00.122+07:00 DEBUG 12528 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T02:08:00.124+07:00  INFO 12528 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T02:08:01.124+07:00  INFO 12528 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T02:08:01.204+07:00  INFO 12528 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2025-03-13T02:08:02.008+07:00  INFO 12528 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T02:08:02.034+07:00  INFO 12528 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T02:08:02.034+07:00  INFO 12528 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T02:08:02.101+07:00  INFO 12528 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T02:08:02.104+07:00  INFO 12528 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1919 ms
+2025-03-13T02:08:02.345+07:00  INFO 12528 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T02:08:02.418+07:00  INFO 12528 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T02:08:02.454+07:00  INFO 12528 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T02:08:02.859+07:00  INFO 12528 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T02:08:02.902+07:00  INFO 12528 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T02:08:03.314+07:00  INFO 12528 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16e07bae
+2025-03-13T02:08:03.314+07:00  INFO 12528 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T02:08:03.379+07:00  WARN 12528 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T02:08:03.403+07:00  INFO 12528 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T02:08:04.250+07:00  INFO 12528 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T02:08:04.299+07:00  INFO 12528 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:08:04.761+07:00  WARN 12528 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T02:08:04.784+07:00 DEBUG 12528 --- [identity-service] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-03-13T02:08:05.159+07:00 DEBUG 12528 --- [identity-service] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-13T02:08:05.488+07:00  INFO 12528 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T02:08:05.504+07:00  INFO 12528 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 6.3 seconds (process running for 6.843)
+2025-03-13T02:08:08.324+07:00  INFO 12528 --- [identity-service] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T02:08:08.324+07:00  INFO 12528 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T02:08:08.324+07:00  INFO 12528 --- [identity-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T02:08:08.346+07:00 DEBUG 12528 --- [identity-service] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /users
+2025-03-13T02:08:08.358+07:00 DEBUG 12528 --- [identity-service] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /users
+2025-03-13T02:08:08.634+07:00 DEBUG 12528 --- [identity-service] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T02:08:28.811+07:00  INFO 12528 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T02:08:28.811+07:00  INFO 12528 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T02:08:28.819+07:00  INFO 12528 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T02:08:28.819+07:00  INFO 12528 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T02:08:28.831+07:00  INFO 12528 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T12:00:31.244+07:00  INFO 19148 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 19148 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T12:00:31.249+07:00 DEBUG 19148 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T12:00:31.251+07:00  INFO 19148 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T12:00:32.488+07:00  INFO 19148 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T12:00:32.584+07:00  INFO 19148 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2025-03-13T12:00:33.503+07:00  INFO 19148 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T12:00:33.524+07:00  INFO 19148 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T12:00:33.524+07:00  INFO 19148 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T12:00:33.608+07:00  INFO 19148 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T12:00:33.609+07:00  INFO 19148 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2264 ms
+2025-03-13T12:00:33.888+07:00  INFO 19148 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T12:00:33.978+07:00  INFO 19148 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T12:00:34.033+07:00  INFO 19148 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T12:00:34.470+07:00  INFO 19148 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T12:00:34.510+07:00  INFO 19148 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T12:00:35.007+07:00  INFO 19148 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2487e20
+2025-03-13T12:00:35.008+07:00  INFO 19148 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T12:00:35.075+07:00  WARN 19148 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T12:00:35.098+07:00  INFO 19148 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T12:00:36.095+07:00  INFO 19148 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T12:00:36.161+07:00  INFO 19148 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T12:00:36.736+07:00  WARN 19148 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T12:00:36.762+07:00 DEBUG 19148 --- [identity-service] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-03-13T12:00:37.166+07:00 DEBUG 19148 --- [identity-service] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-13T12:00:37.496+07:00  INFO 19148 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T12:00:37.505+07:00  INFO 19148 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 7.236 seconds (process running for 7.958)
+2025-03-13T12:00:45.612+07:00  INFO 19148 --- [identity-service] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T12:00:45.613+07:00  INFO 19148 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T12:00:45.614+07:00  INFO 19148 --- [identity-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T12:00:45.638+07:00 DEBUG 19148 --- [identity-service] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /users
+2025-03-13T12:00:45.650+07:00 DEBUG 19148 --- [identity-service] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /users
+2025-03-13T12:00:45.947+07:00 DEBUG 19148 --- [identity-service] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T12:59:42.694+07:00  INFO 19148 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T12:59:42.704+07:00  INFO 19148 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T12:59:42.714+07:00  INFO 19148 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T12:59:42.724+07:00  INFO 19148 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T12:59:42.734+07:00  INFO 19148 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T12:59:56.219+07:00  INFO 9340 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 9340 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T12:59:56.221+07:00 DEBUG 9340 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T12:59:56.222+07:00  INFO 9340 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T12:59:57.228+07:00  INFO 9340 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T12:59:57.324+07:00  INFO 9340 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2025-03-13T12:59:58.059+07:00  INFO 9340 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T12:59:58.074+07:00  INFO 9340 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T12:59:58.074+07:00  INFO 9340 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T12:59:58.127+07:00  INFO 9340 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T12:59:58.128+07:00  INFO 9340 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1848 ms
+2025-03-13T12:59:58.350+07:00  INFO 9340 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T12:59:58.412+07:00  INFO 9340 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T12:59:58.462+07:00  INFO 9340 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T12:59:58.864+07:00  INFO 9340 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T12:59:58.914+07:00  INFO 9340 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T12:59:59.295+07:00  INFO 9340 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c9f4376
+2025-03-13T12:59:59.299+07:00  INFO 9340 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T12:59:59.362+07:00  WARN 9340 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T12:59:59.385+07:00  INFO 9340 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T13:00:00.222+07:00  INFO 9340 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T13:00:00.279+07:00  INFO 9340 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T13:00:00.718+07:00  WARN 9340 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T13:00:00.737+07:00 DEBUG 9340 --- [identity-service] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-03-13T13:00:01.187+07:00 DEBUG 9340 --- [identity-service] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-13T13:00:01.485+07:00  INFO 9340 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T13:00:01.494+07:00  INFO 9340 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 5.965 seconds (process running for 7.454)
+2025-03-13T13:00:25.454+07:00  INFO 9340 --- [identity-service] [http-nio-8080-exec-4] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T13:00:25.454+07:00  INFO 9340 --- [identity-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T13:00:25.457+07:00  INFO 9340 --- [identity-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-13T13:00:25.489+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /auth/get-token
+2025-03-13T13:00:25.526+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T13:00:25.563+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/auth/get-token?continue to session
+2025-03-13T13:01:52.621+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /auth/get-token
+2025-03-13T13:01:52.621+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T13:01:52.623+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/identity/auth/get-token?continue to session
+2025-03-13T13:01:57.660+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /auth/get-token
+2025-03-13T13:01:57.661+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /auth/get-token
+2025-03-13T13:01:58.040+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-13T13:02:46.976+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /users
+2025-03-13T13:02:46.995+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-7] o.s.s.o.s.r.a.JwtAuthenticationProvider  : Authenticated token
+2025-03-13T13:02:46.995+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-7] .s.r.w.a.BearerTokenAuthenticationFilter : Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@d671301, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4EDA0D74EA67BF72B4A13649C6AE23FE], Granted Authorities=[]]
+2025-03-13T13:02:46.997+07:00 DEBUG 9340 --- [identity-service] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /users
+2025-03-13T15:29:40.113+07:00  WARN 9340 --- [identity-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h9m40s582ms823µs600ns).
+2025-03-13T16:15:30.791+07:00  INFO 9340 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T16:15:30.804+07:00  INFO 9340 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T16:15:30.819+07:00  INFO 9340 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:15:30.835+07:00  INFO 9340 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T16:15:30.873+07:00  INFO 9340 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T16:15:39.065+07:00  INFO 8832 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Starting IdentityServiceApplication using Java 22.0.2 with PID 8832 (D:\identity-service\target\classes started by acer in D:\identity-service)
+2025-03-13T16:15:39.067+07:00 DEBUG 8832 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-13T16:15:39.069+07:00  INFO 8832 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T16:15:40.089+07:00  INFO 8832 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T16:15:40.169+07:00  INFO 8832 --- [identity-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2025-03-13T16:15:40.946+07:00  INFO 8832 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T16:15:40.963+07:00  INFO 8832 --- [identity-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T16:15:40.964+07:00  INFO 8832 --- [identity-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T16:15:41.017+07:00  INFO 8832 --- [identity-service] [main] o.a.c.c.C.[.[localhost].[/identity]      : Initializing Spring embedded WebApplicationContext
+2025-03-13T16:15:41.018+07:00  INFO 8832 --- [identity-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1876 ms
+2025-03-13T16:15:41.223+07:00  INFO 8832 --- [identity-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T16:15:41.287+07:00  INFO 8832 --- [identity-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T16:15:41.337+07:00  INFO 8832 --- [identity-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T16:15:41.734+07:00  INFO 8832 --- [identity-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T16:15:41.774+07:00  INFO 8832 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T16:15:42.148+07:00  INFO 8832 --- [identity-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ecdf528
+2025-03-13T16:15:42.152+07:00  INFO 8832 --- [identity-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T16:15:42.227+07:00  WARN 8832 --- [identity-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T16:15:42.253+07:00  INFO 8832 --- [identity-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T16:15:43.240+07:00  INFO 8832 --- [identity-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T16:15:43.783+07:00  WARN 8832 --- [identity-service] [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references user (id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FK55itppkw3i07do3h7qoclqd4k' in the referenced table 'user']
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references user (id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FK55itppkw3i07do3h7qoclqd4k' in the referenced table 'user']
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:448) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:269) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.myproject.identity_service.IdentityServiceApplication.main(IdentityServiceApplication.java:10) ~[classes/:na]
+Caused by: java.sql.SQLException: Failed to add the foreign key constraint. Missing index for constraint 'FK55itppkw3i07do3h7qoclqd4k' in the referenced table 'user'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 36 common frames omitted
+
+2025-03-13T16:15:43.792+07:00  INFO 8832 --- [identity-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:15:44.321+07:00  WARN 8832 --- [identity-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T16:15:44.345+07:00 DEBUG 8832 --- [identity-service] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-03-13T16:15:44.785+07:00 DEBUG 8832 --- [identity-service] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-13T16:15:45.182+07:00  INFO 8832 --- [identity-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/identity'
+2025-03-13T16:15:45.195+07:00  INFO 8832 --- [identity-service] [main] c.m.i.IdentityServiceApplication         : Started IdentityServiceApplication in 7.02 seconds (process running for 7.973)
+2025-03-13T22:00:07.362+07:00  WARN 8832 --- [identity-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m51s297ms110µs100ns).
+2025-03-13T22:31:56.852+07:00  INFO 8832 --- [identity-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T22:31:56.864+07:00  INFO 8832 --- [identity-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T22:31:56.894+07:00  INFO 8832 --- [identity-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T22:31:56.923+07:00  INFO 8832 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T22:31:56.939+07:00  INFO 8832 --- [identity-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
